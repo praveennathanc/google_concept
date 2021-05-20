@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React,{useState,useEffect} from 'react';
 import{HashLink as Link} from 'react-router-hash-link';
 import{FcGoogle} from 'react-icons/fc';
 import google from '../Component/Images/google.png';
@@ -78,6 +78,7 @@ function Home() {
                         <li className="nav-item"><Link to="#phone" smooth className="nav-link">PHONE</Link></li>
                         <li className="nav-item"><Link to="#product" smooth className="nav-link">PRODUCT</Link></li>
                         <li className="nav-item"><Link to="#io" smooth className="nav-link">IO</Link></li>
+                        <li className="nav-item"><Link to="#assistant" smooth className="nav-link">ASSISTANT</Link></li>
                         <li className="nav-item"><Link to="#android" smooth className="nav-link">ANDROID</Link></li>
                     </ul>:null
                  }
@@ -219,7 +220,7 @@ function Home() {
          <div id="io">
              <div className="io-content">
                  <div className="io-title">
-                 <h1>THE GO OGLE I/O 2021</h1>
+                 <h1>THE GOOGLE I/O 2021</h1>
                  <br/>
                  <div className="io-btn">
                      <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>
@@ -277,6 +278,39 @@ function Home() {
                         <br/>
                         <br/>
                  <div className="ass-btn">
+                     <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>
+                 </div>
+                 </div>
+             </div>
+         </div>
+
+         <div id="search">
+             <div className="search-content">
+                 <div className="search-title">
+                     <h1>THE GOOGLE SEARCH</h1>
+                     <br/>
+                    <form>
+                        <input type="search" placeholder="Search Your Answer Here"/>
+                        <button type="submit">Search</button>
+                    </form>
+                 </div>
+             </div>
+         </div>
+
+
+         <div id="android">
+             <div className="android-content">
+                 <div className="and-img">
+                 <img src="https://img.icons8.com/fluent/1000/26e07f/android-os.png" alt="logo"/>
+                 </div>
+
+                 <div className="android-title">
+                 <p>The NEW UPDATED</p>
+                        <h1>ANDROID OS</h1>
+                        <p>Google Assistant is an artificial intelligence–powered virtual assistant developed by Google that is primarily available on mobile and smart home devices. </p>
+                        <br/>
+                        <br/>
+                 <div className="android-btn">
                      <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>
                  </div>
                  </div>

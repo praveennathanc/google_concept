@@ -1,38 +1,461 @@
-.App {
+*
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #fdfaf6;
+  font-family: 'Quicksand', sans-serif;
+}
+a
+{
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.logo
+{
+  position: absolute;
+  top:10px;
+  left: 20px;
+}
+.navbar
+{
+  overflow: hidden;
+  background-color: #fdfaf6;
+  box-shadow: 3px 3px 10px #fdfaf6;
+  position: relative;
+  width: 100%;
+  position: fixed;
+  top:0px;
+  z-index: 2;
+}
+ul
+{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item
+{
+  display: inline-block;
+  padding: 20px 30px;
+}
+.nav-link
+{
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sign-In
+{
+  position: absolute;
+  top:10px;
+  right: 20px;
+  color: white;
+  background-color: #3f3697;
+  padding: 10px 20px;
+  font-size: 10px;
+  border-radius: 6px;
+}
+.sign-In a
+{
+  font-weight: bold;
+  color: white;
+}
+.nav-link:hover
+{
+color:#3f3697;
+}
+.menu-bar
+{
+  position: absolute;
+  top:10px;
+  right:20px;
+  z-index: 1;
+  font-size:30px;
+  display: none;
+}
+#home
+{
+  width:100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home-content
+{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+}
+.home-content h1
+{
+  font-size: 8vw;
+  font-family: 'Poppins', sans-serif;
+}
+.home-btn a
+{
+  background-color: #3f3697;
+  padding: 16px 60px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#phone
+{
+ 
+}
+.google-img
+{
+  width:100%;
+  height: auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity:9%;
+}
+.android-img
+{
+  position: absolute;
+  top:85%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity:50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#phone
+{
+  max-width:100%;
+  position: relative;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 50px;
+}
+.phone-content
+{
+  background-color: #3f3697;
+  width:100%;
+  height: 30vw;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.google-phone
+{
+  position: absolute;
+  width:50vw;
+  height: 50vw;
+  top:-100px;
+  left: -100px;
+}
+.phone-title
+{
+  position: absolute;
+  top:50%;
+  left: 65%;
+  transform: translate(-50%,-50%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.phone-btn a
+{
+  border: 3px solid white;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+}
+.camera
+{
+  width:20vw;
+  height: 10vw;
+  border-radius: 10px;
+  position: absolute;
+  bottom:50px;
+  right: 50px;
+}
+.phone
+{
+  width:20vw;
+  height: 10vw;
+  border-radius: 10px;
+  position: absolute;
+  bottom:250px;
+  right: 50px;
+}
+#product
+{
+ text-align: center;
+ position: relative;
+ margin: 50px;
+}
+.product-title
+{
+  text-align: center;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.g-product
+{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.g-product > div
+{
+  margin: 50px;
+}
+.product-btn a,.ass-btn a
+{
+  border: 2px solid black;
+  padding: 10px 40px;
+  font-weight: bold ;
+  color: black;
+}
+
+#io
+{
+  background:url("C:\Users\prave\app3\src\Component\Images\googleio.jpg") no-repeat;
+  background-size: cover;
+  width:100%;
+  height: auto;
+  position: relative;
+  padding: 100px;
+}
+.io-content
+{
+  background: rgba( 249, 249, 249, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 14.5px );
+  -webkit-backdrop-filter: blur( 14.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width:100%;
+  height: 400px;
+  position: relative;
+}
+.io-title,.map-title
+{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+  text-align: center;
+}
+.io-title h1
+{
+  color: white;
+  font-size: 8vw;
+}
+.io-btn a
+{
+  border: 2px solid white;
+  padding: 10px 40px;
+  font-weight: bold ;
+  color:white;
+}
+#assistant,#mail
+{
+  padding: 100px;
+}
+.ass-c,.mail-content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  flex-wrap: wrap;
+
+}
+.ass-title h1,.mail-title h1
+{
+  font-size: 5vw;
+}
+.ass-title,.mail-title
+{
+  width:500px;
+  margin: 40px;
+}
+#map
+{
+  background: url("C:\Users\prave\app3\src\Component\Images\googlemap.jpg");
+  width:100%;
+  height: auto;
+  padding: 100px;
+}
+.map-content
+{
+  background: rgba(13, 17, 22, 0.05);
+box-shadow: 0 8px 32px 0 rgba(9, 9, 12, 0.37);
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 10.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+width:100%;
+height: 400px;
+}
+.map-title h1
+{
+  font-size: 5vw;
+}
+footer
+{
+  padding: 80px;
+  background-color: #d8e3e7;
+  width:100%;
+  height: auto;
+  
+}
+.footer-c
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.follow a
+{
+  font-size: 30px;
+  margin: 10px;
+  color: gray;
+}
+
+.links a,.support a
+{
+  font-size: 14px;
+  color: gray;
+}
+.links,.support
+{
+  line-height: 35px;
+}
+.about
+{
+  width:400px;
+}
+
+
+
+
+
+@media screen and (max-width:950px)
+{
+  .g-product
+  {
+    grid-template-columns: auto auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width:800px)
+{
+  .navbar-nav
+  {
+    margin-top: 50px;
   }
+  .nav-item
+  {
+    display: block;
+    padding: 15px;
+  }
+  #assistant,#mail
+  {
+    padding: 10px;
+  }
+  .ass-title,.mail-title
+  {
+    width: 100%;
+    margin: 0px;
+  }
+  .footer-c
+  {
+    flex-direction: column;
+  }
+  .about
+  {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width:650px)
+{
+  #phone
+  {
+    height: 80vh;
+    padding: 10px;
+  }
+  .phone-content
+  {
+    height: 400px;
+  }
+  .camera,.phone
+  {
+    display: none;
+  }
+  
+  .google-phone
+  {
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 50%;
+    width:300px;
+    height: 300px;
+  }
+  .phone-title
+  {
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+  }
+  #io,#map
+  {
+    padding: 30px;
+  }
+  .g-product
+  {
+    grid-template-columns: auto;
+  }
+  .ass-img img, .mail-img img
+  {
+    width:200px;
+    height: 200px;
+    margin-top:40px;
+  }
+  .menu-bar
+  {
+    display: block;
+  }
+  .sign-In
+  {
+    right: 100px;
+  }
+  .phone-title
+  {
+    width:100%;
+    padding: 10px;
+  }
+  .phone-btn a, .product-btn a
+  {
+    padding: 10px 20px;
+  }
+  .product-title
+  {
+    padding: 5px;
+    width:100%;
+    margin-bottom: 50px;
+  }
+  .g-product > div
+  {
+    margin: 10px;
+  }
+ 
 }

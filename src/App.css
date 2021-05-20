@@ -310,7 +310,7 @@ height: 400px;
 }
 footer
 {
-  padding: 80px;
+  padding: 40px;
   background-color: #d8e3e7;
   width:100%;
   height: auto;
@@ -340,6 +340,25 @@ footer
 .about
 {
   width:400px;
+}
+.ass-btn a:hover,.ass-btn a:hover,.product-btn a:hover
+{
+  background-color: black;
+  color: white;
+}
+.p-btn a:hover
+{
+  color: black;
+}
+.p-btn a
+{
+  color: rgb(163, 154, 154);
+  font-weight: bold;
+}
+.io-btn a:hover,.phone-btn a:hover
+{
+  background-color: white;
+  color: black;
 }
 
 
@@ -456,6 +475,18 @@ footer
   .g-product > div
   {
     margin: 10px;
+  }
+  .home-content h1
+  {
+    font-size: 35px;
+  }
+  .phone-title h1
+  {
+    font-size: 40px;
+  }
+  .ass-c h1,.map-title h1,.mail-title h1
+  {
+    font-size: 30px;
   }
  
 }

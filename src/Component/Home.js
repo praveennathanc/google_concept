@@ -102,7 +102,7 @@ function Home() {
              <div className="phone-content">
                  <div className="phone-title">
                      <p>THE FUTURE PHONE IS HERE</p>
-                     <h2>PIXEL 5</h2>
+                     <h1>PIXEL 5</h1>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                      <br/>
                      <br/>
@@ -150,18 +150,17 @@ function Home() {
 
 
                      <div>
-                     <img src="https://img.icons8.com/fluent/50/000000/apple-watch.png" alt="logo"/>
+                     <img src="https://img.icons8.com/fluent/40/000000/apple-watch.png" alt="logo"/>
                          <h1>Smart Watch</h1>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                     </div>
-                     <br/>
                          <div className="p-btn">
                      <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>
                      </div>
-
+                     </div>
+                
 
                      <div>
-                     <img src="https://img.icons8.com/cotton/64/000000/chrome.png" alt="logo"/>
+                     <img src="https://img.icons8.com/cotton/50/000000/chrome.png" alt="logo"/>
                          <h1>Chrome Cast</h1>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                          <br/>
@@ -206,7 +205,7 @@ function Home() {
          <div id="io">
              <div className="io-content">
                  <div className="io-title">
-                 <h1>THE GOOGLE I/O 2021</h1>
+                 <h1>THE GO OGLE I/O 2021</h1>
                  <br/>
                  <div className="io-btn">
                      <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>

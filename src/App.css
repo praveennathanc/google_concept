@@ -24,7 +24,6 @@ a
 {
   overflow: hidden;
   background-color: #fdfaf6;
-  box-shadow: 3px 3px 10px #fdfaf6;
   position: relative;
   width: 100%;
   position: fixed;
@@ -106,10 +105,6 @@ color:#3f3697;
   font-weight: bold;
   border-radius: 10px;
 }
-#phone
-{
- 
-}
 .google-img
 {
   width:100%;
@@ -160,9 +155,13 @@ color:#3f3697;
 {
   position: absolute;
   top:50%;
-  left: 65%;
+  left: 60%;
   transform: translate(-50%,-50%);
   color: white;
+}
+.phone-title h1
+{
+  font-size: 5vw;
 }
 
 .phone-btn a

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect,useRef} from 'react';
 import{HashLink as Link} from 'react-router-hash-link';
 import{FcGoogle} from 'react-icons/fc';
 import google from '../Component/Images/google.png';
@@ -13,6 +13,9 @@ function Home() {
 
     const[menuBar,setMenubar] = useState(true)
     const[nav,setNav] =useState(true)
+    const[color,setColor] =useState(false)
+
+
     const menubarHandler=()=>
     {
         setMenubar(!menuBar)
@@ -32,7 +35,17 @@ function Home() {
             setNav(true)
         }
     }
-
+    const scrollHandler=()=>
+    {
+        if(window.scrollY >= 200)
+        {
+          setColor(true)
+        }
+        else
+        {
+            setColor(false)
+        }
+    }
 
     useEffect(()=>
     {
@@ -43,9 +56,10 @@ function Home() {
     },[])
 
     window.addEventListener('resize',resizeHandler)
+    window.addEventListener('scroll',scrollHandler)
     return (
         <>
-         <div className="navbar">
+         <div className="navbar" style={color ?{boxShadow:'5px 5px 20px black'}: {boxShadow:"none"}}>
 
              <div className="logo">
               <h3><FcGoogle style={{fontSize:'30px'}}/></h3>

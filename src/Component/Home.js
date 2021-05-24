@@ -14,6 +14,7 @@ function Home() {
     const[menuBar,setMenubar] = useState(true)
     const[nav,setNav] =useState(true)
     const[color,setColor] =useState(false)
+    const image = true
 
 
     const menubarHandler=()=>
@@ -95,8 +96,8 @@ function Home() {
          <div id="home">
              <div className="home-content">
                  <div className="home-title">
-                     <h1>THE GOOGLE'S APPLICATION</h1>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                     <h1>GOOGLE</h1>
+                     <p>Our mission is to organise the world’s information and make it universally accessible and useful.</p>
                      <br/>
                      <br/>
                      <div className="home-btn">
@@ -106,8 +107,8 @@ function Home() {
              </div>
 
             <div className="home-bg-images">
-                <img src={google} alt="googleImage" className="google-img"/>
-                <img src={android} alt="AndroidImage" className="android-img"/>
+                <img src={image ? google : 'https://i.ibb.co/m0Gt5nZ/google-logo-transparent.png'} alt="googleImage" className="google-img"/>
+                <img src={image ? android :'https://i.ibb.co/Xz5XDb5/android.png'} alt="AndroidImage" className="android-img"/>
             </div>
          </div>
 
@@ -126,9 +127,9 @@ function Home() {
                      </div>
                  </div>
                  <div className="phone-bg-img">
-                     <img src={gphone} alt="googlePhone" className="google-phone"/>
-                     <img src={camera} alt="phoneCamera" className="camera"/>
-                     <img src={phone} alt="phone" className="phone"/>
+                     <img src={image ? gphone : 'https://i.ibb.co/FWJ8SkG/googlephone.png'} alt="googlePhone" className="google-phone"/>
+                     <img src={image ? camera : 'https://i.ibb.co/dK4hwzV/camera.jpg'} alt="phoneCamera" className="camera"/>
+                     <img src={image ? phone : 'https://i.ibb.co/C6ktJ9h/phone.jpg'} alt="phone" className="phone"/>
                  </div>
              </div>
          </div>
@@ -217,10 +218,10 @@ function Home() {
 
 
 
-         <div id="io">
+         <div id="io" style={image ?{}  :{background:"url('https://i.ibb.co/02BNj8z/googleio.jpg')no-repeat",backgroundSize:'cover'}}>
              <div className="io-content">
                  <div className="io-title">
-                 <h1>THE GOOGLE I/O 2021</h1>
+                 <h1>GOOGLE'S I/O 2021</h1>
                  <br/>
                  <div className="io-btn">
                      <a href="https://bumper-masters.000webhostapp.com/dummy.html" rel="noreferrer">Know More</a>
@@ -234,7 +235,7 @@ function Home() {
              <div class="ass-c">
                     <div className="ass-title">
                         <p>The NEW UPDATED</p>
-                        <h1>THE GOOGLE ASSISTANT</h1>
+                        <h1>GOOGLE ASSISTANT</h1>
                         <p>Google Assistant is an artificial intelligence–powered virtual assistant developed by Google that is primarily available on mobile and smart home devices. </p>
                         <br/>
                         <br/>
@@ -249,11 +250,11 @@ function Home() {
          </div>
 
 
-         <div id="map">
+         <div id="map" style={image ?{}:{background:"url('https://i.ibb.co/pdpYmhr/googlemap.jpg')no-repeat",backgroundSize:'cover'}}>
              <div className="map-content">
                  <div className="map-title">
-                     <h1>THE GOOGLE MAP</h1>
-                     <p>Google Maps is a web mapping platform and consumer application offered by Google.</p>
+                     <h1>GOOGLE MAP</h1>
+                     <p>Google Maps is a web mapping platform and consumer application offered by Google. It offers satellite imagery, aerial photography, street maps, 360°</p>
                      <br/>
                      <br/>
                  <div className="ass-btn">
@@ -272,9 +273,9 @@ function Home() {
                  </div>
 
                  <div className="mail-title">
-                 <p>The NEW UPDATED</p>
-                        <h1>THE GMAIL</h1>
-                        <p>Google Assistant is an artificial intelligence–powered virtual assistant developed by Google that is primarily available on mobile and smart home devices. </p>
+                        <p>The NEW UPDATED</p>
+                        <h1>GMAIL</h1>
+                        <p>Gmail is a free email service provided by Google. As of 2019, it had 1.5 billion active users worldwide. A user typically accesses Gmail in a web browser or the official mobile app.</p>
                         <br/>
                         <br/>
                  <div className="ass-btn">
@@ -284,7 +285,7 @@ function Home() {
              </div>
          </div>
 
-         <div id="search">
+         <div id="search" style={image ?{}:{background:"url('https://i.ibb.co/GT3kGVh/googleS.png')",backgroundSize:'cover'}}>
              <div className="search-content">
                  <div className="search-title">
                      <h1>THE GOOGLE SEARCH</h1>
@@ -307,7 +308,7 @@ function Home() {
                  <div className="android-title">
                  <p>The NEW UPDATED</p>
                         <h1>ANDROID OS</h1>
-                        <p>Google Assistant is an artificial intelligence–powered virtual assistant developed by Google that is primarily available on mobile and smart home devices. </p>
+                        <p>ndroid is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</p>
                         <br/>
                         <br/>
                  <div className="android-btn">

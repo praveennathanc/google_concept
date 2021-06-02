@@ -113,7 +113,7 @@ color:#3f3697;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  opacity: 30%;
+  filter: opacity(40%);
 
 }
 .android-img
@@ -122,7 +122,7 @@ color:#3f3697;
   top:85%;
   left:50%;
   transform: translate(-50%,-50%);
- opacity: 80%;
+ filter: opacity(90%);
 }
 
 #phone

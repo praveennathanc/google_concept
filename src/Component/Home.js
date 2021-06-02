@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import{HashLink as Link} from 'react-router-hash-link';
 import{FcGoogle} from 'react-icons/fc';
+import google from '../Component/Images/google.png'
+import android from '../Component/Images/android.png';
 import {FaYoutube,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare,FaLinkedin} from 'react-icons/fa';
 import {CgMenuGridO} from 'react-icons/cg';
 import{VscClose} from 'react-icons/vsc'
@@ -101,8 +103,8 @@ function Home() {
              </div>
 
             <div className="home-bg-images">
-                <img src='https://i.ibb.co/m0Gt5nZ/google-logo-transparent.png' alt="googlebgImage" className="google-img"/>
-                <img src='https://i.ibb.co/Xz5XDb5/android.png' alt="AndroidbgImage" className="android-img"/>
+                <img src={google} alt="googlebgImage" className="google-img"/>
+                <img src={android} alt="AndroidbgImage" className="android-img"/>
             </div>
          </div>
 

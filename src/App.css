@@ -113,7 +113,7 @@ color:#3f3697;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  opacity:9%;
+  opacity:20%;
 }
 .android-img
 {
@@ -121,7 +121,7 @@ color:#3f3697;
   top:85%;
   left:50%;
   transform: translate(-50%,-50%);
-  opacity:50%;
+  opacity:60%;
 }
 
 #phone
@@ -223,7 +223,7 @@ color:#3f3697;
 
 #io
 {
-  background:url("C:\Users\prave\app3\src\Component\Images\googleio.jpg") no-repeat;
+  background:url("https://i.ibb.co/02BNj8z/googleio.jpg") no-repeat;
   background-size: cover;
   width:100%;
   height: auto;
@@ -286,7 +286,7 @@ color:#3f3697;
 }
 #map
 {
-  background: url("C:\Users\prave\app3\src\Component\Images\googlemap.jpg");
+  background: url("https://i.ibb.co/gJCkn4F/googlemap.jpg");
   width:100%;
   height: auto;
   padding: 100px;
@@ -308,17 +308,14 @@ height: 400px;
 }
 #search
 {
-  background: url("C:\Users\prave\app3\src\Component\Images\googleS.png")no-repeat;
+  background: url("https://i.ibb.co/GT3kGVh/googleS.png")no-repeat;
   background-size: cover;
   width:100%;
   height: auto;
   padding: 100px;
   color: white;
 }
-form
-{
 
-}
 
 input[type="search"]
 {

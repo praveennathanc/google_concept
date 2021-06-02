@@ -1,11 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import{HashLink as Link} from 'react-router-hash-link';
 import{FcGoogle} from 'react-icons/fc';
-import google from '../Component/Images/google.png';
-import android from '../Component/Images/android.png';
-import gphone from '../Component/Images/googlephone.png';
-import camera from '../Component/Images/camera.jpg';
-import phone from '../Component/Images/phone.jpg';
 import {FaYoutube,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare,FaLinkedin} from 'react-icons/fa';
 import {CgMenuGridO} from 'react-icons/cg';
 import{VscClose} from 'react-icons/vsc'
@@ -14,7 +9,6 @@ function Home() {
     const[menuBar,setMenubar] = useState(true)
     const[nav,setNav] =useState(true)
     const[color,setColor] =useState(false)
-    const image = true
 
 
     const menubarHandler=()=>
@@ -107,8 +101,8 @@ function Home() {
              </div>
 
             <div className="home-bg-images">
-                <img src={image ? google : 'https://i.ibb.co/m0Gt5nZ/google-logo-transparent.png'} alt="googleImage" className="google-img"/>
-                <img src={image ? android :'https://i.ibb.co/Xz5XDb5/android.png'} alt="AndroidImage" className="android-img"/>
+                <img src='https://i.ibb.co/m0Gt5nZ/google-logo-transparent.png' alt="googlebgImage" className="google-img"/>
+                <img src='https://i.ibb.co/Xz5XDb5/android.png' alt="AndroidbgImage" className="android-img"/>
             </div>
          </div>
 
@@ -127,9 +121,9 @@ function Home() {
                      </div>
                  </div>
                  <div className="phone-bg-img">
-                     <img src={image ? gphone : 'https://i.ibb.co/FWJ8SkG/googlephone.png'} alt="googlePhone" className="google-phone"/>
-                     <img src={image ? camera : 'https://i.ibb.co/dK4hwzV/camera.jpg'} alt="phoneCamera" className="camera"/>
-                     <img src={image ? phone : 'https://i.ibb.co/C6ktJ9h/phone.jpg'} alt="phone" className="phone"/>
+                     <img src='https://i.ibb.co/FWJ8SkG/googlephone.png' alt="googlePhone" className="google-phone"/>
+                     <img src='https://i.ibb.co/dK4hwzV/camera.jpg' alt="phoneCamera" className="camera"/>
+                     <img src='https://i.ibb.co/C6ktJ9h/phone.jpg' alt="phone" className="phone"/>
                  </div>
              </div>
          </div>
@@ -218,7 +212,7 @@ function Home() {
 
 
 
-         <div id="io" style={image ?{}  :{background:"url('https://i.ibb.co/02BNj8z/googleio.jpg')no-repeat",backgroundSize:'cover'}}>
+         <div id="io">
              <div className="io-content">
                  <div className="io-title">
                  <h1>GOOGLE'S I/O 2021</h1>
@@ -250,11 +244,11 @@ function Home() {
          </div>
 
 
-         <div id="map" style={image ?{}:{background:"url('https://i.ibb.co/pdpYmhr/googlemap.jpg')no-repeat",backgroundSize:'cover'}}>
+         <div id="map">
              <div className="map-content">
                  <div className="map-title">
                      <h1>GOOGLE MAP</h1>
-                     <p>Google Maps is a web mapping platform and consumer application offered by Google. It offers satellite imagery, aerial photography, street maps, 360°</p>
+                     <p>Google Maps is a web mapping platform and consumer application offered by Google. It offers satellite bgImagery, aerial photography, street maps, 360°</p>
                      <br/>
                      <br/>
                  <div className="ass-btn">
@@ -285,7 +279,7 @@ function Home() {
              </div>
          </div>
 
-         <div id="search" style={image ?{}:{background:"url('https://i.ibb.co/GT3kGVh/googleS.png')",backgroundSize:'cover'}}>
+         <div id="search">
              <div className="search-content">
                  <div className="search-title">
                      <h1>THE GOOGLE SEARCH</h1>
